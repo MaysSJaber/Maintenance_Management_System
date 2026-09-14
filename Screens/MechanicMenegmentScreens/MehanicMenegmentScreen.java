@@ -2,7 +2,6 @@ package Screens.Mechanic;
 import Lib.InputValidate;
 import Lib.MyString;
 import Screens.Screen;
-import Screens.User.UserMenegmentMenue;
 
 import java.io.IOException;
 
@@ -80,22 +79,22 @@ private static void performMechanicMenue(MechanicManagementMenu option) throws I
 
         case SHOW_ALL_Mechanic:
            showAllMechanicScreen();
-           goBackUserMenue();
+           goBackMechanicMenue();
             break;
 
         case ADD_NEW_Mechanic:
             showAddMechanicScreen();
-            goBackUserMenue();
+            goBackMechanicMenue();
             break;
 
         case DELETE_Mechanic:
             showDeleteMechanicScreen();
-            goBackUserMenue();
+            goBackMechanicMenue();
             break;
 
         case UPDATE_Mechanic:
             showUpdateMechanicScreen();
-            goBackUserMenue();
+            goBackMechanicMenue();
             break;
 
         case GO_BACK:
@@ -105,7 +104,7 @@ return;
 }
 
 
-    private static void goBackUserMenue() throws IOException {
+    private static void goBackMechanicMenue() throws IOException {
 
         System.out.println("\n\nPress Enter to go back to Mechanic Menu...");
         new java.util.Scanner(System.in).nextLine();
@@ -143,7 +142,3 @@ return;
 
 
 }
-
-
-
-
